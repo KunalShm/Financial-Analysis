@@ -124,6 +124,7 @@ y <- log(test_Google_daily$GOOG.Close)
 test_prices <- data.frame(ds,y)
 qplot(ds_test, y_test, data=test_prices)
 
+# Facebook's Prophet package ---------------------------------------------------------------------
 library(prophet)
 
 model <- prophet(train_prices)
